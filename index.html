@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap"
       rel="stylesheet"
@@ -17,15 +18,19 @@
     <div class="container">
       <h1>Generate a <br></b><span>random password</span></h1>
       <p class="subtitle">Never use an insecure password again.</p>
-      <div class="settings">
+      <div class="settings-container">
         <label for="pass-length">Length: </label>
-        <input type="number" id="pass-length">
+        <input type="number" class="settings" id="pass-length">
+        
+        <label for="pass-symbols">Symbols:</label>
+        <input type="checkbox" class="settings" id="pass-symbols" checked>
+        
       </div>
       <button id="generate-btn">Generate passwords</button>
       <div class="divide-line"></div>
       <div class="passwords-container">
-        <div class="password" id="pass-one"></div>
-        <div class="password" id="pass-two"></div>
+        <div class="password" id="pass-one"><div id="output-one"></div><i class="fa-regular fa-copy tooltip" id="copy-one" title="Copy"></i></div>
+        <div class="password" id="pass-two"><div id="output-two"></div><i class="fa-regular fa-copy tooltip" id="copy-two" title="Copy"></i></div>
       </div>
     </div>
     <script src="./app.js"></script>

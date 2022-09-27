@@ -36,19 +36,26 @@ h1 span{
     margin: 0.7rem 0 3rem 0;
 }
 
-.settings{
+.settings-container{
     margin-bottom: 2rem;
 }
 
-#pass-length {
+.settings {
     font-family: inherit;
     font-size: inherit;
     color: #fff;
     background-color: #2F3E53;
-    width: 50px;
-    padding: 3px;
+    padding: 3px 0 3px 8px;
+    margin-right: 20px;
     border: none;
     border-radius: 3px;
+}
+#pass-length {
+    width: 50px;
+}
+#pass-nums, #pass-symbols {
+    height: 20px;
+    width: 20px;
 }
 
 #generate-btn {
@@ -88,10 +95,26 @@ h1 span{
     padding: 9px;
     border-radius: 6px;
     text-align: center;
+    position: relative;
 }
+
 
 #pass-one {
     margin: 0 20px 20px 0;
 }
+
+.fa-copy {
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.fa-copy:hover {
+    color: #D5D4D8;
+    cursor: pointer;
+}
+
+
 
 
