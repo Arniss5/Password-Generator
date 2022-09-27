@@ -36,6 +36,21 @@ h1 span{
     margin: 0.7rem 0 3rem 0;
 }
 
+.settings{
+    margin-bottom: 2rem;
+}
+
+#pass-length {
+    font-family: inherit;
+    font-size: inherit;
+    color: #fff;
+    background-color: #2F3E53;
+    width: 50px;
+    padding: 3px;
+    border: none;
+    border-radius: 3px;
+}
+
 #generate-btn {
     font-family: inherit;
     font-size: 16px;

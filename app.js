@@ -14,15 +14,20 @@ generateBtn.addEventListener("click", displayPass)
 //GENERATEPASS function - create a string of 15 random characters
 function generatePass() {
     let password = ""
-    for (let i = 0; i < 15; i++) {
+    let passLength = document.getElementById("pass-length").value;
+    
+    for (let i = 0; i < passLength; i++) {
         let randomIndex = Math.floor(Math.random() * characters.length)
         password += characters[randomIndex]
     }
     return password
 }
 
+
 //DISPLAYPASS function
 function displayPass() {
     outputOne.textContent = generatePass()
     outputTwo.textContent = generatePass()
+    
+
 }
