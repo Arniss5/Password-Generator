@@ -32,7 +32,6 @@ h1 span{
 
 .subtitle {
     font-size: 1.25rem;
-    /* letter-spacing: 1px; */
     color: #D5D4D8;
     margin: 0.7rem 0 3rem 0;
 }
@@ -46,6 +45,11 @@ h1 span{
     height: 40px;
     border: none;
     border-radius: 6px;
+}
+
+#generate-btn:hover {
+    background-color: #10a573;
+    cursor: pointer;
 }
 
 .divide-line {
@@ -75,12 +79,4 @@ h1 span{
     margin: 0 20px 20px 0;
 }
 
-/* @media only screen and (max-width: 544px) {
-    .passwords-container {
-        justify-content: center;
-    }
-    #pass-one {
-        margin: 0 0 20px 0;
-    }
-  } */
 
