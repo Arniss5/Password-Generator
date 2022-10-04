@@ -52,6 +52,7 @@ function displayPass() {
 function copy(e) {
     let copyText
     //check which password to copy
+
     if (e.target.id === "copy-one") {
         copyText = outputOne.textContent
     } else if (e.target.id === "copy-two") {

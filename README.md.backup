@@ -67,13 +67,7 @@ With this app I practiced JS functions with the use of conditionals and iteratio
 }
 ```
 
-```
-if (e.target.id === "copy-one") {
-        copyText = outputOne.textContent
-    } else if (e.target.id === "copy-two") {
-        copyText = outputTwo.textContent
-    }
-```
+
 ```js
 navigator.clipboard.writeText(copyText)
 ```
